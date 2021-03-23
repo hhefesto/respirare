@@ -1,0 +1,37 @@
+name:                  respirare
+version:               0.1.0.0
+synopsis:              Wim Hof style breathing exercises tracker and helper
+description:           Please see README.md
+homepage:              https://github.com/hhefesto/respirare
+license:               BSD-3
+license-file:          LICENSE
+author:                Daniel Alberto Herrera Rendón
+maintainer:            hhefesto@rdataa.com
+copyright:             2021 Daniel Alberto Herrera Rendón
+category:              Lifestyle
+build-type:            Simple
+extra-source-files:    CHANGELOG.md, README.md
+cabal-version:         >=1.10
+
+data-files:            session_history.json
+
+executable respirare-exe
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  -- TODO: Add correct ghc-options
+  ghc-options:         -threaded -rtsopts -with-rtsopts=-N
+  build-depends:       base
+                     , haskeline >= 0.8.1.2
+                     , mtl
+                     , time
+                     , strict
+                     , aeson
+                     , utf8-string
+                     , bytestring
+                     , lens
+                     , directory
+  default-language:    Haskell2010
+
+source-repository head
+  type:                git
+  location:            https://github.com/hhefesto/respirare

@@ -175,4 +175,3 @@ main = do
 --     n <- get
 --     put (n+1)
 --     return ("", [Completion (show n) "" True])
-

@@ -67,7 +67,7 @@ emptyRespirareState = MkRespirareState
 updateRespirareStateSessionAdd :: UTCTime                              -- ^Session start
                                -> Pico                                 -- ^Time in seconds of breath hold to be added to records
                                -> InputT (StateT RespirareState IO) ()
-updateRespirareStateSessionAdd sessionStart t = do
+updateRespirareStateSessionAdd sessionStart t =
   lift . modify $ \(MkRespirareState records current timeStart) ->
     -- TODO: do this with lenses
     case current of

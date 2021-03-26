@@ -3,7 +3,7 @@ version:               0.1.0.0
 synopsis:              Wim Hof style breathing exercises tracker and helper
 description:           Please see README.md
 homepage:              https://github.com/hhefesto/respirare
-license:               BSD-3
+license:               BSD3
 license-file:          LICENSE
 author:                Daniel Alberto Herrera Rendón
 maintainer:            hhefesto@rdataa.com
